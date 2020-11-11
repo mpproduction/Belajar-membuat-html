@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+   <img src="Royal-Progress copy.jpg" /> <br>
+   <tr>
+   	<td>RM.01 </td> <br>
+	<td><b>FORMULIR PENDAFTARAN RAWAT INAP/ONE DAY CARE</b></td> <br>
+   	<td><i>Semua Bagian Harus Di isi</i></td>
+   	<hr>
+		</tr>
+	<div class="box"></div> <br >
+	<form action="simpan.php" method="POST">
+		No.Registrasi : <input type="number" name="no.registrasi"> <br>
+					<br>
+		No.Rekam Medis : <input type="number" name="no.rekammedis"> <br>
+					<br>
+		<tr>
+			<td>
+			<b>A.IDENTITAS PASIEN(bagian ini harus lengkap dan mohon diisi pasien)</b>
+				<ul>
+					<li>Nama Depan(sesuai KTP) : <input type="text" name="namadepan">
+						Laki-laki				 <input type="radio" name="jk">
+						Perempuan				 <input type="radio" name="jk"></li> 						
+						<br>
+					<li>Nama Ibu Kandung(sesuai KTP) : <input type="text" name="namaibukandung"> </li><br>
+					<li>Tempat dan Tanggal Lahir : <input type="text" name="ttl"> 
+						Agama : <input type="text" name="agama"> </li><br>
+					<li>Alamat Rumah(sesuai KTP) : <input type="text" name="alamat">
+						No : <input type="number" name="no">
+						RT : <input type="number" name="rt">
+						RW : <input type="number" name="rw"><br> <br>
+						Kelurahan : <input type="text" name="kelurahan">
+						Kecamatan : <input type="text" name="kecamatan"> <br> <br>
+						Kota/wilayah : <input type="text" name="kota">
+						Telepon : <input type="number" name="telepon"> <br> <br>
+						Email : <input type="email" name="email">
+						HP : <input type="number" name="hp">
+					</li><br>
+					<li> Pendidikan Terakhir : <input type="text" name="pendidikan"></li><br>
+					<li>Pekerjaan/bagian : <input type="text" name="pekerjaab"></li><br>
+					<li>Alamat Kantor : <input type="text" name="alamatkantor"></li><br>
+					<li>Warga Negara : <input type="text" name="warganegara"></li><br>
+					<li>Pasien pernah dirawat di RS Royal Progress pada tanggal : <input type="text" name="tanggaldirawat">
+						bulan : <input type="text" name="bulan"> tahun : <input type="text" name="tahun"></li><br>
+				</ul>
+			<b>B.IDENTITAS PENANGGUNG JAWAB(bagian ini harus lengkap dan mohon penanggung jawab)</b>
+				<ul>
+					<li>Nama Depan(sesuai KTP) : <input type="text" name="namadepan"></li> 						
+					<br>
+					<li>Nama Ibu Kandung(sesuai KTP) : <input type="text" name="namaibukandung"> </li><br>
+					<li>Alamat Rumah(sesuai KTP) : <input type="text" name="alamat">
+						No : <input type="number" name="no">
+						RT : <input type="number" name="rt">
+						RW : <input type="number" name="rw"><br> <br>
+						Kelurahan : <input type="text" name="kelurahan">
+						Kecamatan : <input type="text" name="kecamatan"> <br> <br>
+						Kota/wilayah : <input type="text" name="kota">
+						Telepon : <input type="number" name="telepon"> <br> <br>
+						Email : <input type="email" name="email">
+						HP : <input type="number" name="hp">
+					</li><br>
+					<li>Pekerjaan/bagian : <input type="text" name="pekerjaab"></li><br>
+					<li>Alamat Kantor : <input type="text" name="alamatkantor"></li><br>
+					<li>Hubungan dengan pasien sebagai : <input type="text" name="hubungan"></li>
+				</ul>
+			<b>C.KELAS PERAWATAN YANG DIMINTA(bagian ini diisi admission)</b>
+				<ul>
+					<li>
+						Kelas Perawatan : <input type="text" name="kelas">
+						Kamar : <input type="text" name="kamar">
+						Lantai : <input type="text" name="lantai"></li><br>
+					<li>Tanggal Masuk : <input type="text" name="kota">
+						Jam : <input type="text" name="jam">
+						Dokter Pengirim : <input type="number" name="dokter"></li><br>
+					<li>DPJP : <input type="text" name="dpjp"></li><br>
+					<li>Asal Pasien(pilih satu) : 
+						IGD				 <input type="radio" name="asal"> &nbsp
+						IRJ				 <input type="radio" name="asal"></li><br> &nbsp
+					<li>
+						Jaminan Kesehatan :
+						GAKIN/SKTM<input type="checkbox" name="jamkes"> &nbsp
+						ASKES<input type="checkbox" name="jamkes"> &nbsp
+						JAMSOSTEK<input type="checkbox" name="jamkes"> &nbsp
+						Lainnya<input type="checkbox" name="jamkes"> &nbsp
+					</li><br>
+					<li>
+						Rujukan :
+						Dr.Royal Progress<input type="radio" name="rujukan"> &nbsp
+						Dr.Kerjasama/rujukan<input type="radio" name="rujukan"> &nbsp
+						Rumah Sakit<input type="radio" name="rujukan"> &nbsp
+						Bidan<input type="radio" name="rujukan"> &nbsp
+						Perusahaan Rekanan<input type="radio" name="rujukan"> &nbsp
+						Yayasan<input type="radio" name="rujukan"> &nbsp
+						Progress Group<input type="radio" name="rujukan"> 
+					</li> <br>
+					<li>
+						Cara Pembayaran :
+						Pribadi<input type="radio" name="pembayaran"> &nbsp
+						Jaminan<input type="radio" name="pembayaran"> &nbsp
+					</li><br>
+					<li>
+						Kode Perusahaan : <br>
+						Surat Jaminan :
+						Ya<input type="radio" name="suratjaminan"> &nbsp
+						Tidak<input type="radio" name="suratjaminan"> &nbsp <br>
+						Surat Rujukan :
+						Ya<input type="radio" name="suratrujukan"> &nbsp
+						Tidak<input type="radio" name="suratrujukan"> &nbsp
+					</li>
+				</ul>
+			<b>D.SURAT PERNYATAAN PERSETUJUAN PERATURAN RUMAH SAKIT DAN HAK PASIEN</b>
+				<ol>
+					Harus ACC No. 1 & 2
+					<br>
+					<li>
+					<input type="checkbox" name="acc"> Saya sudah membaca, mengedit,mengerti, dan menyetujui "Peraturan Rawat Inap/One Day Care" <br></li>
+					<li>
+					<input type="checkbox" name="acc"> Saya sudah membaca, mengedit,mengerti, dan menyetujui "Hak dan Kewajiban Pasien Rawat Inap/One Day Care"
+					</li><br>
+				</ol>
+				Jakarta <input type="text" name="jakarta"><br>
+				Tanda tangan penanggung jawab pasien/pasien
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				(__________________________) <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Nama Lengkap <br>
+				Tanda tangan petugas admission
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				(__________________________) <br>
+				&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Nama Lengkap
+				<br>
+				<br>
+				<br>
+				Distribusi : <ul>
+					<li>
+						Putih - Rekam Medis <br>
+						Merah - Kasir <br>
+						Biru - Admission
+					</li>
+				</ul>
+			</td>
+		</tr>
+	</form>
+</body>
+</html>
